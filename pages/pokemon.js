@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Nav from "../components/Nav";
 
 function Pokemon({ pokemon }) {
   return (
@@ -6,6 +7,7 @@ function Pokemon({ pokemon }) {
       <Head>
         <title>Pokemon : {pokemon?.name}</title>
       </Head>
+      <Nav />
       <div>
         Welcome, {pokemon?.name} !
         <img src={pokemon?.sprites.front_default} alt={pokemon?.name} />
