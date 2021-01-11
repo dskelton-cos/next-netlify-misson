@@ -14,11 +14,6 @@ export default function Nav() {
             <a>Blog</a>
           </Link>
         </li>
-        <li>
-          <Link href="/pokemon">
-            <a>Pokemon</a>
-          </Link>
-        </li>
       </ul>
     </nav>
   );
