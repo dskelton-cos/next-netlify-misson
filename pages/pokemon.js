@@ -1,9 +1,16 @@
+import Head from "next/head";
+
 function Pokemon({ pokemon }) {
   return (
-    <div>
-      Welcome, {pokemon?.name} !
-      <img src={pokemon?.sprites.front_default} alt={pokemon?.name} />
-    </div>
+    <>
+      <Head>
+        <title>Pokemon : {pokemon?.name}</title>
+      </Head>
+      <div>
+        Welcome, {pokemon?.name} !
+        <img src={pokemon?.sprites.front_default} alt={pokemon?.name} />
+      </div>
+    </>
   );
 }
 

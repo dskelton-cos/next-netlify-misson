@@ -1,5 +1,14 @@
+import Head from "next/head";
+
 function Home() {
-  return <div>Welcome, explorers</div>;
+  return (
+    <>
+      <Head>
+        <title> Pokemon Home</title>
+      </Head>
+      <div>Welcome, explorers</div>
+    </>
+  );
 }
 
 export default Home;
